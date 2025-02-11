@@ -1,13 +1,13 @@
 import Image from "next/image"
+import Link from "next/link"
 import React from 'react'
 
 function Footer() {
   return (
     <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center text-zinc-400">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4 hover:text-black transition-colors"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
+        <Link
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4 dark:hover:text-white transition-colors"
+          href="/"
           rel="noopener noreferrer"
         >
           <Image
@@ -19,11 +19,10 @@ function Footer() {
             className="dark:invert"
           />
           Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4 hover:text-black transition-colors"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
+        </Link>
+        <Link
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4 dark:hover:text-white transition-colors"
+          href="/"
           rel="noopener noreferrer"
         >
           <Image
@@ -35,11 +34,10 @@ function Footer() {
             className="dark:invert"
           />
           Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4 hover:text-black transition-colors"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
+        </Link>
+        <Link
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4 dark:hover:text-white transition-colors"
+          href="/"
           rel="noopener noreferrer"
         >
           <Image
@@ -51,7 +49,7 @@ function Footer() {
             className="dark:invert"
           />
           Go to nextjs.org →
-        </a>
+        </Link>
       </div>
   )
 }
